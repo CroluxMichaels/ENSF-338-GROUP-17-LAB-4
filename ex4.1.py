@@ -10,6 +10,7 @@ def processdata(li):
                 li[i] *= 2
 
 # Q2: Modified version with same best, worst, and average case complexity (O(n²))
+# just removed the conditional inner loop to ensure the inner loop always runs
 def processdata_modified(li):
     for i in range(len(li)):  
         for j in range(len(li)):  
