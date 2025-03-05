@@ -2,6 +2,8 @@ import time
 import random
 import matplotlib.pyplot as plt
 
+# We know that an inefficient way to search is using linear search which scans the entire array. 
+# Where its worst-case complexity is O(n) -> when the element is not in the array or at the last position. 
 def linear_search(arr, target):
     """Implements a linear search on an array"""
     for i in range(len(arr)):
@@ -9,6 +11,8 @@ def linear_search(arr, target):
             return i
     return -1
 
+# Binary Search works best on sorted arrays and reduces its search by half each step. Its worst-case complexity 
+# is O(log n) as it halves the search space in each step.
 def binary_search(arr, target):
     """Implements a binary search on a sorted array"""
     left, right = 0, len(arr) - 1
