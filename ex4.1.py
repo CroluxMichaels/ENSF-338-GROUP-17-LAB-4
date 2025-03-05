@@ -5,7 +5,6 @@
 # Worst case: O(n²), if all elements are greater than 5, the inner loop runs for every iteration of the outer loop
 # Average case: O(n²), this is because it depends on the number of the elements greater than 5. If half of the 
 # elements trigger the inner loop then the complexity is around O(n²) in the asymptotic sense.
-
 def processdata(li):
     for i in range(len(li)):  
         if li[i] > 5:
